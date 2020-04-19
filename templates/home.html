@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		IMAGE-CAPTION BOT
+	</title>
+	<link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='style.css') }}">
+	<link rel="shortcut icon" href="{{url_for('static',filename='logo.ico')}}">
+</head>
+<body>
+	<img src="{{url_for('static',filename='bot.png')}}" width="100px" height="100px">
+	<h1 class="intro">HELLO WORLD!! I am Caption-Bot. I will try my best to describe pictures in words.</h1>
+	<div>
+		<form method="Post" action='/submit' enctype="multipart/form-data">
+			<input type="file" name="pic">
+			<input type="submit" value="Upload">
+		</form>
+	</div>
+	<p class="foot">
+		<b>MADE BY:PRATEEK KUMAR</b> <br>
+		<b><i>&nbsp&nbsp&nbsp&nbsp&nbsp18225prateek@gmail.com</i></b>
+	</P>
+</body>
+</html>

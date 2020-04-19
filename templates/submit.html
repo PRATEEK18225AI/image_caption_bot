@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		IMAGE-CAPTION BOT
+	</title>
+	<link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='style.css') }}">
+	<link rel="shortcut icon" href="{{url_for('static',filename='logo.ico')}}">
+</head>
+<body>
+	<img src="{{url_for('static',filename='bot.png')}}" width="100px" height="100px">
+	<h2 class="disp"> YOUR IMAGE </h2>
+	<img class="your" src="{{url_for('static',filename=pic)}}" 
+	width="300px" height="300px">
+	<p>
+		{{caption}}
+	</p>
+	<p class="foot">
+		<b>MADE BY:PRATEEK KUMAR</b> <br>
+		<b><i>&nbsp&nbsp&nbsp&nbsp&nbsp18225prateek@gmail.com</i></b>
+	</P>
+</body>
+</html>
+
