@@ -1,5 +1,5 @@
 # image_caption_bot
-### It's a Keras model for generating text on images deployed on a flask server<br/>
+## It's a Keras model for generating text on images deployed on a flask server<br/>
 ## Made as a project under coding blocks machine learning course(2020).<br/>
 <br/>
 ## The model was train on Flickr-8k dataset available on kaggle(https://www.kaggle.com/shadabhussain/flickr8k)</br>
