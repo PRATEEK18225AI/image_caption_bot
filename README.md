@@ -1,5 +1,5 @@
 # Image Caption Bot
-## Keras model for caption on images deployed on a flask server
+## Keras model for generating caption on images and its deployment on a flask server
 Made as a project under coding blocks machine learning course(2020). 
 
 ## Dataset Used
