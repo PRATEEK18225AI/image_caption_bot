@@ -23,7 +23,7 @@ The model is trained for 50 epochs using **categorical cross entropy** loss func
 For first 30 epochs model is trained with batch size=3 and learning rate= 0.001. For last 20 epoches batch size is increased to 6 and learning rate is reduced to 0.0001.  
 ![loss](./training/loss.png)
 
-## Flask Web Applocation Layout
+## Flask Web Application Layout
 ### Homepage
 ![homepage](./static/webpages/homepage.png)
 
