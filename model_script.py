@@ -30,7 +30,15 @@ max_len=33
 
 
 #Resnet convolutional base
-base_model = ResNet50(weights='imagenet')
+
+base_model = ResNet50(weights=None)
+
+if 'resnet50.h5' in os.listdir():
+    base_model.load_weights('resnet50.h5')
+else:
+    base_model = ResNet50(weights='imagenet')
+
+
 rn = Model(inputs=base_model.input, outputs=base_model.get_layer('avg_pool').output)
 
 #keras model for generating caption
