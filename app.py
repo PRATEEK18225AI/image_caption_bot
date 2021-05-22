@@ -16,7 +16,7 @@ def req():
 	if request.method=="POST":
 		f=request.files['pic']
 		f.save('./static/'+f.filename)
-		caption='I guess , '+gen_caption('./static/'+f.filename)
+		caption='Seems like, '+gen_caption('./static/'+f.filename)
 		return render_template('submit.html',pic=f.filename,caption=caption)
 
 if __name__=='__main__':
